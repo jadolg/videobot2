@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  bot:
+    image: guamulo/vitibot
+    build:
+      context: .
+    ports:
+      - "9991:9991"
+    env_file:
+      - .env

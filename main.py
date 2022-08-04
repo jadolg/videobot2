@@ -11,7 +11,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     if update.message.text == "/start":
         await update.message.reply_text("Let's download some weejios")
         return
-    context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=ChatAction.TYPING)
+    await context.bot.send_chat_action(chat_id=update.effective_message.chat_id, action=ChatAction.TYPING)
     ydl_opts = {
         'outtmpl': '%(id)s.%(ext)s',
     }

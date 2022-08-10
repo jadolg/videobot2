@@ -32,6 +32,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         except:
             await update.message.reply_text(
                 text=f"Looks like something went wrong uploading the video to telegram. It possibly is bigger than 50Mb.")
+        os.remove(output_file)
 
 
 if __name__ == '__main__':

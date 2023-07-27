@@ -1,2 +1,2 @@
-python-telegram-bot==20.0a2
+python-telegram-bot==20.4
 youtube-dl==2021.12.17
